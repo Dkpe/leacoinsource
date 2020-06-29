@@ -3,6 +3,7 @@ leacoinsource
 
 
 In rpcrawtransations.cpp:
-
--                const CScriptID& hash = boost::get<const CScriptID&>(address);
-+                const CScriptID& hash = boost::get<CScriptID>(address);
+#
+REM                const CScriptID& hash = boost::get<const CScriptID&>(address);
+ADD                const CScriptID& hash = boost::get<CScriptID>(address);
+#
